@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+    /* Brewery Color Palette */
+  --brewery-primary: #f4a950;      /* Main amber */
+  --brewery-primary-dark: #d17a1f; /* Darker amber */
+  --brewery-secondary: #8b4513;    /* Saddle brown */
+  --brewery-dark: #2d1810;         /* Dark brown */
+  --brewery-light: #f9f7f4;        /* Cream */
+  --brewery-accent: #e8932e; 
+  --brewery-accent-light:   #fef7e0;    /* Orange accent */
+  
+  /* Semantic colors */
+  --background: var(--brewery-light);
+  --foreground: var(--brewery-dark);
+  --card-bg: #ffffff;
+  --border: #e5e7eb;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--brewery-dark);
+    --foreground: var(--brewery-light);
+    --card-bg: #1f2937;
+    --border: #374151;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+}
